@@ -6,7 +6,16 @@
 num = input("Enter a number: ")
 num = int(num)
 
+
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
 
+def isEven(num):
+    if num % 2 == 0:
+        print("is even")
+    else:
+        print("Odd")
+
+
+isEven(num)

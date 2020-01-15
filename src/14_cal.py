@@ -22,3 +22,15 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+args = sys.argv
+
+currentYear = datetime.today().year
+print(len(args))
+if len(args) == 1:
+    print("Please enter a month and a year. The application is terminated")
+    sys.exit()
+elif len(args) == 2:
+    print(calendar.month(currentYear, int(args[1])))
+elif len(args) == 3:
+    print(calendar.month(int(args[2]), int(args[1])))
